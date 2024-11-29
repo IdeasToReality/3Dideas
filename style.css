@@ -35,3 +35,9 @@ select, #pointsInput {
 #addPointsBtn, #subtractPointsBtn {
     width: 120px;
 }
+
+#Contact-Me {
+    background-color: #6a0dad;
+    color: #ccc;
+    padding: 10xp;
+}
