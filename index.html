@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Print Business</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Admin Login Section -->
+    <div id="adminLogin">
+        <h2>Admin Login</h2>
+        <input type="password" id="adminPassword" placeholder="Enter Admin Password">
+        <button id="adminLoginBtn">Login</button>
+        <p id="adminLoginError" style="color:red; display:none;">Incorrect password!</p>
+    </div>
+
+    <!-- Admin Panel Section -->
+    <div id="adminPanel" style="display:none;">
+        <h2>Admin Panel</h2>
+        <h3>Manage Users</h3>
+        <select id="userDropdown"></select>
+        <input type="number" id="pointsInput" placeholder="Enter points">
+        <button id="addPointsBtn">Add Points</button>
+        <button id="subtractPointsBtn">Subtract Points</button>
+        <p id="userPoints"></p>
+    </div>
+
+    <!-- User Section -->
+    <div id="userSection">
+        <div id="createUser">
+            <h2>Create Account</h2>
+            <input type="text" id="newUsername" placeholder="Enter Username">
+            <input type="password" id="newUserPassword" placeholder="Enter Password">
+            <button id="createUserBtn">Create Account</button>
+        </div>
+        <div id="userLogin">
+            <h2>User Login</h2>
+            <input type="text" id="username" placeholder="Enter Username">
+            <input type="password" id="userPassword" placeholder="Enter Password">
+            <button id="userLoginBtn">Login</button>
+            <p id="userLoginError" style="color:red; display:none;">Incorrect username or password!</p>
+        </div>
+        <div id="userProfile" style="display:none;">
+            <h2>Welcome, <span id="userDisplayName"></span>!</h2>
+            <p>Your Points: <span id="userPointsDisplay"></span></p>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
