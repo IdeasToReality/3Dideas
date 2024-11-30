@@ -1,43 +1,38 @@
 body {
     font-family: 'Trebuchet MS', sans-serif;
     background-color: #f4f4f4;
-    color: #333;
     margin: 0;
     padding: 0;
+    color: #333;
+}
+
+#adminLogin, #userLogin, #adminPanel {
     text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 input, button {
+    margin: 10px 0;
     padding: 10px;
-    margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 90%;
     font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 button {
     background-color: #6a0dad;
     color: white;
+    border: none;
     cursor: pointer;
 }
 
-#adminPanel, #userProfile {
-    margin-top: 20px;
-}
-
-select, #pointsInput {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-#addPointsBtn, #subtractPointsBtn {
-    width: 120px;
-}
-
-#Contact-Me {
-    background-color: #6a0dad;
-    color: #ccc;
-    padding: 10xp;
+button:hover {
+    background-color: #5a0c9a;
 }
