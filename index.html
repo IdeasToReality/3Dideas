@@ -7,32 +7,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Admin Login -->
+    <div id="logo">
+        <h1>3D Ideas</h1>
+        <h5>By IdeasToReality</h5>
+        <img src="logo.png" alt="3D Ideas Logo" class="logo">
+        <h2>Want to buy a print ? Contact me !</h2>
+        <h2>squirt012024@outlook.com</h2>
+    </div>
+
+    <!-- Admin Login Section -->
     <div id="adminLogin">
         <h2>Admin Login</h2>
         <input type="password" id="adminPassword" placeholder="Enter Admin Password">
         <button id="adminLoginBtn">Login</button>
-        <p id="adminLoginError" style="color: red; display: none;">Incorrect password!</p>
+        <p id="adminLoginError" style="color:red; display:none;">Incorrect password!</p>
     </div>
 
-    <!-- User Login -->
-    <div id="userLogin">
-        <h2>User Login</h2>
-        <input type="text" id="username" placeholder="Enter Username">
-        <input type="password" id="password" placeholder="Enter Password">
-        <button id="userLoginBtn">Login</button>
-        <button id="userSignupBtn">Sign Up</button>
-        <p id="userLoginError" style="color: red; display: none;">Invalid login details!</p>
-    </div>
-
-    <!-- Admin Panel -->
-    <div id="adminPanel" style="display: none;">
+    <!-- Admin Panel Section -->
+    <div id="adminPanel" style="display:none;">
         <h2>Admin Panel</h2>
+        <h3>Manage Users</h3>
         <select id="userDropdown"></select>
-        <input type="number" id="pointsInput" placeholder="Enter Points">
+        <input type="number" id="pointsInput" placeholder="Enter points">
         <button id="addPointsBtn">Add Points</button>
-        <button id="subtractPointsBtn">Remove Points</button>
-        <p id="adminError" style="color: red; display: none;">Error managing points!</p>
+        <button id="subtractPointsBtn">Subtract Points</button>
+        <p id="userPoints"></p>
+    </div>
+
+    <!-- User Section -->
+    <div id="userSection">
+        <div id="createUser">
+            <h2>Create Account</h2>
+            <input type="text" id="newUsername" placeholder="Enter Username">
+            <input type="password" id="newUserPassword" placeholder="Enter Password">
+            <button id="createUserBtn">Create Account</button>
+        </div>
+        <div id="userLogin">
+            <h2>User Login</h2>
+            <input type="text" id="username" placeholder="Enter Username">
+            <input type="password" id="userPassword" placeholder="Enter Password">
+            <button id="userLoginBtn">Login</button>
+            <p id="userLoginError" style="color:red; display:none;">Incorrect username or password!</p>
+        </div>
+        <div id="userProfile" style="display:none;">
+            <h2>Welcome, <span id="userDisplayName"></span>!</h2>
+            <img src="pointLogo.jpeg" alt="point logo" class="logo">
+            <h3><span id="userPointsDisplay"></span></h3>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </div>
+    <div id="helpBar">
+        <h4>If you encounter any problem of any sort, you cant contact me at squirt012024@outlook.com</h6>
     </div>
 
     <script src="script.js"></script>
