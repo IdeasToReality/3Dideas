@@ -1,38 +1,68 @@
 body {
     font-family: 'Trebuchet MS', sans-serif;
     background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
-    color: #333;
-}
-
-#adminLogin, #userLogin, #adminPanel {
     text-align: center;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 400px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: white;
 }
 
 input, button {
-    margin: 10px 0;
     padding: 10px;
-    width: 90%;
-    font-size: 1rem;
-    border-radius: 5px;
+    margin: 5px;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 button {
     background-color: #6a0dad;
     color: white;
-    border: none;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #5a0c9a;
+#adminPanel, #userProfile {
+    margin-top: 20px;
+    border-style: double;
+    border: #6a0dad;
+    border-radius: 10px;
+}
+
+#userLogin {
+    margin-bottom: 10px;
+}
+
+select, #pointsInput {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#addPointsBtn, #subtractPointsBtn {
+    width: 120px;
+}
+
+#logo {
+    color: #000000;
+    margin-top: 10px;
+}
+
+#logo img {
+    width: 150px;
+    border-radius: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+#helpBar {
+    background-color: #6a0dad;
+    color: #ccc;
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+
+#userProfile img {
+    width: 100px;
+    border-radius: 100px;
 }
