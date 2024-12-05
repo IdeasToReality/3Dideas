@@ -1,5 +1,5 @@
 let users = JSON.parse(localStorage.getItem('users')) || {};
-const adminPassword = 'SEE-HERE';
+const adminPassword = '3divineBeasts';
 let sessionToken = null;
 
 // Hashing function
