@@ -40,7 +40,7 @@ document.getElementById('userSignupBtn').addEventListener('click', async () => {
 });
 
 // User Login
-document.getElementById('userLoginBtn').addEventListener('click', async () => {
+document.getElementById('createUserBtn').addEventListener('click', async () => {
     const username = sanitizeInput(document.getElementById('username').value);
     const password = document.getElementById('password').value;
     if (!users[username]) {
