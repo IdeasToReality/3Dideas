@@ -25,7 +25,7 @@ document.getElementById('adminLoginBtn').addEventListener('click', async () => {
 });
 
 // User Signup
-document.getElementById('userSignupBtn').addEventListener('click', async () => {
+document.getElementById('createUserBtn').addEventListener('click', async () => {
     const username = sanitizeInput(document.getElementById('username').value);
     const password = document.getElementById('password').value;
     if (!username || !password) return alert('Enter valid details!');
@@ -40,7 +40,7 @@ document.getElementById('userSignupBtn').addEventListener('click', async () => {
 });
 
 // User Login
-document.getElementById('createUserBtn').addEventListener('click', async () => {
+document.getElementById('userLoginBtn').addEventListener('click', async () => {
     const username = sanitizeInput(document.getElementById('username').value);
     const password = document.getElementById('password').value;
     if (!users[username]) {
