@@ -43,7 +43,7 @@ const userPointsDisplay = document.getElementById("userPointsDisplay");
 const logoutBtn = document.getElementById("logoutBtn");
 
 // Start
-printDetails.style.display = "none";
+//printDetails.style.display = "none";
 
 // Functions
 function saveUsers() {
